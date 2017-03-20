@@ -1,24 +1,83 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+html {
+  width: 100%;
+  height: 100%; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: 'Open Sans', serif;
+  font-size: 14px;
+  background-color: #fcfcfc;
+  width: 100%;
+  height: 100%; }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
+main {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: calc(100% - 40px); }
 
-.App-intro {
-  font-size: large;
-}
+.uikit-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 0 5px;
+  z-index: 9999;
+  background-color: #2a2a2a;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 6px 0 #2a2a2a;
+  box-sizing: border-box; }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+.uikit-sidebar {
+  width: 75px;
+  padding: 0 5px;
+  background: #b11118;
+  height: 100%; }
+
+.uikit-button {
+  min-width: 80px;
+  padding: 4px 15px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: 1px solid;
+  font-size: 10px;
+  line-height: 1.4;
+  font-weight: 700; }
+  .uikit-button[disabled] {
+    opacity: .5; }
+  .uikit-button-primary {
+    background: #B11118;
+    border-color: #8A070C;
+    color: #fff;
+    font-weight: bold; }
+    .uikit-button-primary:hover {
+      background: #8A070C;
+      cursor: pointer; }
+    .uikit-button-primary.cancel {
+      background: #F4F4F4;
+      border-color: #D0D0D0;
+      color: #7D7D7D; }
+      .uikit-button-primary.cancel:hover {
+        background: #D0D0D0;
+        cursor: pointer; }
+  .uikit-button-secondary {
+    background: #fff;
+    border-color: #B11118;
+    color: #B11118;
+    font-weight: 400; }
+    .uikit-button-secondary:hover {
+      background: #8A070C;
+      color: #fff;
+      cursor: pointer; }
+    .uikit-button-secondary.cancel {
+      background: #fff;
+      border-color: #D0D0D0;
+      color: #7D7D7D; }
+      .uikit-button-secondary.cancel:hover {
+        background: #D0D0D0;
+        cursor: pointer; }

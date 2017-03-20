@@ -1,0 +1,70 @@
+// Basic colors for UIkit
+$red: #B11118;
+$red-darker: #8A070C;
+
+$grey: #F4F4F4;
+$grey-dark: #7D7D7D;
+$grey-darker: #D0D0D0;
+
+.uikit-button {
+  min-width: 80px;
+  padding: 4px 15px;
+  font-family: $font-root-family;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: 1px solid;
+  font-size: 10px;
+  line-height: 1.4;
+  font-weight: 700;
+
+  &[disabled] {
+    opacity: .5;
+  }
+
+  &-primary {
+    background: $red;
+    border-color: $red-darker;
+    color: $white;
+    font-weight: bold;
+
+    &:hover {
+      background: $red-darker;
+      cursor: pointer;
+    }
+
+    &.cancel {
+      background: $grey;
+      border-color: $grey-darker;
+      color: $grey-dark;
+
+      &:hover {
+        background: $grey-darker;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-secondary {
+    background: $white;
+    border-color: $red;
+    color: $red;
+    font-weight: 400;
+
+    &:hover {
+      background: $red-darker;
+      color: $white;
+      cursor: pointer;
+    }
+
+    &.cancel {
+      background: $white;
+      border-color: $grey-darker;
+      color: $grey-dark;
+
+      &:hover {
+        background: $grey-darker;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -10,7 +10,7 @@ const menuItems = [
   {
     name: 'Readme',
     routerLink: '/readme',
-    icon: 'archive',
+    icon: 'live_help',
     iconUrl: ''
   },
   {
@@ -18,7 +18,7 @@ const menuItems = [
     id: "menu",
     active: true,
     routerLink: '/buttons',
-    icon: 'broken_image',
+    icon: 'menu',
     iconUrl: '',
     subItems: [
       { name: 'SubItem 1', id: "menu", routerLink: '' },
@@ -49,9 +49,6 @@ class App extends Component {
           <UISidebar>
             <UIMenu menuItems={menuItems}></UIMenu>
           </UISidebar>
-          <p className="App-intro">
-            To get started, edit <code>src/App.js</code> and save to reload.
-          </p>
         </main>
       </div>
     );

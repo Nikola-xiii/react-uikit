@@ -1,4 +1,5 @@
 import React, {Component, PropTypes} from 'react';
+import UIMenuItem from './UIMenuItem.component';
 
 class UIMenu extends Component {
   static propTypes = {
@@ -9,22 +10,7 @@ class UIMenu extends Component {
     return (
       <div className="uikit-menu">
         <ul className="main-menu">
-          {this.props.menuItems.map((item) =>
-            <li className="uikit-menu-item">
-              <a href={item.routerLink}>
-                {item.icon && <i className="material-icons">{item.icon}</i>}
-                {item.iconUrl && <img alt="icon" src={item.iconUrl}/>}
-                <span>{item.name}</span>
-                {item.subItems && <ul className="sub-menu">
-                  {item.subItems.map((subitem) => <li>
-                    <a href={subitem.routerLink}>
-                      <span>{subitem.name}</span>
-                    </a>
-                  </li>)}
-                </ul>}
-              </a>
-            </li>
-          )}
+          {this.props.menuItems.map((item, index) => <UIMenuItem key={index} item={item}/>)}
         </ul>
       </div>
     )

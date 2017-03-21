@@ -81,3 +81,6 @@ main {
       .uikit-button-secondary.cancel:hover {
         background: #D0D0D0;
         cursor: pointer; }
+
+.logo {
+  height: 30px; }

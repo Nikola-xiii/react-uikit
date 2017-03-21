@@ -1,4 +1,23 @@
-@import "../components/react-uikit.export";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: 'Open Sans', serif;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+}
 
 .logo {
   height: 30px;

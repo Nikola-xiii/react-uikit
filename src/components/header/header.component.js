@@ -1,10 +1,7 @@
 import React, {Component} from 'react';
+import './header.component.scss';
 
 class Header extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     return(
       <header className="uikit-header">
@@ -15,4 +12,3 @@ class Header extends Component {
 }
 
 export default Header;
-//TODO

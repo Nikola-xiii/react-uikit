@@ -1,11 +1,9 @@
 import React, {Component, PropTypes} from 'react';
 
-class Sidebar extends Component {
+class Button extends Component {
   constructor() {
     super();
-
-
   }
 }
 
-export default Sidebar;
+export default Button;

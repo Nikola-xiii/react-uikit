@@ -1,9 +1,12 @@
 // @flow
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import UIHeader from './components/UIHeader';
 import UISidebar from './components/UISidebar';
 import UIMenu from './components/UIMenu';
+import Readme from './docs/readme.page';
+import MenuDoc from './docs/menu.page';
 import './App.scss';
 
 const menuItems = [
@@ -17,7 +20,7 @@ const menuItems = [
     name: 'Menu',
     id: "menu",
     active: true,
-    routerLink: '/buttons',
+    routerLink: '/menu',
     icon: 'menu',
     iconUrl: '',
     subItems: [
@@ -31,7 +34,7 @@ const menuItems = [
     name: 'Grid',
     id: "grid",
     active: true,
-    routerLink: '/buttons',
+    routerLink: '/grid',
     icon: 'view_comfy',
     iconUrl: '',
   }
@@ -49,6 +52,13 @@ class App extends Component {
           <UISidebar>
             <UIMenu menuItems={menuItems}></UIMenu>
           </UISidebar>
+          <Router>
+            <div className="content">
+              <Route exact path="/" component={Readme}/>
+              <Route path="/readme" component={Readme}/>
+              <Route path="/menu" component={MenuDoc}/>
+            </div>
+          </Router>
         </main>
       </div>
     );

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 //import Header from '../components/index'
 import Header from './header.component';
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   render() {

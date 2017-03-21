@@ -16,7 +16,10 @@ body {
 }
 
 main {
+  display: flex;
+  position: relative;
   width: 100%;
+  height: calc(100vh - 40px);
 }
 
 .logo {

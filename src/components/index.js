@@ -1,3 +1,3 @@
-export Button from './button';
-export Header  from './header';
-export Sidebar  from './sidebar';
+//export Button from './button';
+export UIHeader from './header';
+export UISidebar from './sidebar';

@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import UIHeader from './components/UIHeader';
 import UISidebar from './components/UISidebar';
-import UIButton from './components/UIButton';
 import UIMenu from './components/UIMenu';
 import './App.scss';
 

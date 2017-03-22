@@ -2,10 +2,6 @@ import React, {Component, PropTypes} from 'react';
 import UIMenuItem from './UIMenuItem.component';
 
 class UIMenu extends Component {
-  static propTypes = {
-    menuItems: PropTypes.array
-  };
-
   render() {
     return (
       <div className="uikit-menu">
@@ -16,5 +12,9 @@ class UIMenu extends Component {
     )
   }
 }
+
+UIMenu.propTypes = {
+  menuItems: PropTypes.array.isRequired
+};
 
 export default UIMenu;

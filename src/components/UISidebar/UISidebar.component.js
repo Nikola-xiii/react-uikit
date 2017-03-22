@@ -1,5 +1,4 @@
 import React, {Component, PropTypes} from 'react';
-import './UISidebar.component.scss';
 
 class UISidebar extends Component {
   static propTypes = {

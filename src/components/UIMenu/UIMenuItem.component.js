@@ -2,10 +2,6 @@ import React, {Component, PropTypes} from 'react';
 import { Link } from 'react-router';
 
 class UIMenuItem extends Component {
-  static propTypes = {
-    menuItems: PropTypes.array
-  };
-
   iconRender = function(icon) {
     if(icon) {
       return (<i className="material-icons">{icon}</i>);
@@ -31,11 +27,15 @@ class UIMenuItem extends Component {
           {this.iconRender(this.props.item.icon)}
           {this.props.item.iconUrl && <img alt="icon" src={this.props.item.iconUrl}/>}
           <span>{this.props.item.name}</span>
-          {this.subMenuRender(this.props.item.subItems)}
         </Link>
+        {this.subMenuRender(this.props.item.subItems)}
       </li>
     )
   }
 }
+
+UIMenuItem.propTypes = {
+  item: PropTypes.object.isRequired
+};
 
 export default UIMenuItem;

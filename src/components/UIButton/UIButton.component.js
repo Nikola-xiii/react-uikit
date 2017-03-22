@@ -11,6 +11,7 @@ class UIButton extends Component {
       <button className={this.classTypes} disabled={this.props.disabled}>
         {this.props.children}
       </button>
+
     )
   }
 }

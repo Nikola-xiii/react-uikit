@@ -27,7 +27,7 @@ class UIMenuItem extends Component {
   render() {
     return (
       <li key={this.props.item.key} className="uikit-menu-item">
-        <Link to={this.props.item.routerLink}>
+        <Link activeClassName="active" to={this.props.item.routerLink}>
           {this.iconRender(this.props.item.icon)}
           {this.props.item.iconUrl && <img alt="icon" src={this.props.item.iconUrl}/>}
           <span>{this.props.item.name}</span>

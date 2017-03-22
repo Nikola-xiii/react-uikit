@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
 
-class MenuPage extends Component {
+class ButtonPage extends Component {
   render() {
     return(
       <div>
-        <h1>Menu Component</h1>
+        <h1>Button Component</h1>
+
       </div>
     )
   }
 }
 
-export default MenuPage;
+export default ButtonPage;

@@ -2,6 +2,7 @@
 $red: #B11118;
 $red-darker: #8A070C;
 
+$white: #000;
 $grey: #F4F4F4;
 $grey-dark: #7D7D7D;
 $grey-darker: #D0D0D0;
@@ -9,7 +10,6 @@ $grey-darker: #D0D0D0;
 .uikit-button {
   min-width: 80px;
   padding: 4px 15px;
-  font-family: $font-root-family;
   text-transform: uppercase;
   border-radius: 3px;
   border: 1px solid;

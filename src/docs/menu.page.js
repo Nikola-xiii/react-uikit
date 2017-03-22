@@ -5,6 +5,10 @@ class MenuPage extends Component {
     return(
       <div>
         <h1>Menu Component</h1>
+        <h2>Button types example</h2>
+        <div>
+
+        </div>
       </div>
     )
   }

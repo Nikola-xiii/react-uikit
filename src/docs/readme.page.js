@@ -8,7 +8,7 @@ class ButtonPage extends Component {
         <h2>Install module</h2>
         <code>npm install nikola-xiii/react-uikit --save-dev</code>
         <h2>Import components</h2>
-        <code>import &#123; UIComponentName &#125; from 'react-uikit/src/component/UIComponentName';</code>
+        <code>import UIComponentName from 'react-uikit/src/component/UIComponentName';</code>
       </div>
     )
   }

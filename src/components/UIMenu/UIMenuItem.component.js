@@ -1,4 +1,5 @@
 import React, {Component, PropTypes} from 'react';
+import { Link } from 'react-router';
 
 class UIMenuItem extends Component {
   static propTypes = {
@@ -26,12 +27,12 @@ class UIMenuItem extends Component {
   render() {
     return (
       <li key={this.props.item.key} className="uikit-menu-item">
-        <a href={this.props.item.routerLink}>
+        <Link to={this.props.item.routerLink}>
           {this.iconRender(this.props.item.icon)}
           {this.props.item.iconUrl && <img alt="icon" src={this.props.item.iconUrl}/>}
           <span>{this.props.item.name}</span>
           {this.subMenuRender(this.props.item.subItems)}
-        </a>
+        </Link>
       </li>
     )
   }

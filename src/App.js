@@ -1,14 +1,10 @@
 // @flow
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 import UIHeader from './components/UIHeader';
 import UISidebar from './components/UISidebar';
 import UIButton from './components/UIButton';
 import UIMenu from './components/UIMenu';
-import Readme from './docs/readme.page';
-import MenuPage from './docs/menu.page';
-import ButtonPage from './docs/button.page';
 import './App.scss';
 
 const menuItems = [
@@ -62,13 +58,9 @@ class App extends Component {
           <UISidebar>
             <UIMenu menuItems={menuItems}></UIMenu>
           </UISidebar>
-          <Router>
-            <div className="content">
-              <Route exact path="/" component={Readme}/>
-              <Route path="/readme" component={MenuPage}/>
-              <Route path="/button" component={ButtonPage}/>
-            </div>
-          </Router>
+          <div className="content">
+            {this.props.children}
+          </div>
         </main>
       </div>
     );

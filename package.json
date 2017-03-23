@@ -68,7 +68,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "deploy": "gh-pages -d build",
-    "lib-compile": "rimraf lib && babel src/components -d lib && copy src/components/*.scss lib"
+    "lib-compile": "rimraf lib && babel src/components -d lib"
   },
   "jest": {
     "collectCoverageFrom": [

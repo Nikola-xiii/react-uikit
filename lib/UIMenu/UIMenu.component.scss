@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.uikit-menu {
+  .main-menu {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.uikit-menu-item {
+  position: relative;
+  color: #ffffff;
+  list-style-type: none;
+  text-align: center;
+  padding: 20px 0;
+  cursor: pointer;
+  font-size: 12px;
+
+  span {
+    opacity: 0.6;
+  }
+
+  img {
+    height: 24px;
+    width: auto;
+  }
+
+  &:hover {
+    .sub-menu {
+      display: block;
+    }
+
+    .material-icons,
+    span {
+      opacity: 1;
+    }
+  }
+
+  a {
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+
+    &.active {
+      .material-icons,
+      span {
+        opacity: 1;
+      }
+
+      span {
+        font-weight: 700;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        z-index: 120;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-right: 7px solid #ffffff;
+      }
+    }
+  }
+
+  .material-icons {
+    display: block;
+    opacity: 0.6;
+    margin: 0 auto 12px;
+    font-size: 32px;
+  }
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  padding: 10px 1px;
+  background: #fff;
+  box-shadow: 0 1px 4px 1px rgba(150, 150, 150, 0.3);
+  margin: 0;
+  width: 120px;
+  left: 85px;
+  top: 20px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    z-index: 120;
+    left: -7px;
+    top: 30.5px;
+    transform: translateY(-50%);
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 7px solid #ffffff;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    color: #7c7c7c;
+    font-size: 10px;
+    text-align: left;
+    padding: 5px 15px;
+
+    span {
+      opacity: 1;
+      font-weight: 400;
+    }
+
+    &:hover {
+      color: #fff;
+      background: #b11118;
+    }
+  }
+}

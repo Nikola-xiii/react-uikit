@@ -1,4 +1,5 @@
 import React, {Component, PropTypes} from 'react';
+import UIButton from '../UIButton';
 
 const GridHead = ({headers}) => {
   return(
@@ -17,10 +18,12 @@ const GridRow = ({row, headers, index}) => {
 };
 
 const GridCell = ({row, valueKey, type}) => {
-  if(type == 'text')
+  if(type === 'text')
     return(<td>{row[valueKey]}</td>);
-  if(type == 'link')
+  if(type === 'link')
     return(<td><a href={row[valueKey]}>{row[valueKey]}</a></td>);
+  if(type === 'action')
+    return(<td><UIButton icon={row[valueKey].icon} type="icon"></UIButton></td>);
 };
 
 class UIGrid extends Component {

@@ -9,16 +9,17 @@ class UIButton extends Component {
   render() {
     return (
       <button className={this.classTypes} disabled={this.props.disabled}>
+        {this.props.icon && <i className="material-icons">{this.props.icon}</i>}
         {this.props.children}
       </button>
-
     )
   }
 }
 
 UIButton.propTypes = {
   type: PropTypes.string.isRequired,
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
+  icon: PropTypes.string
 };
 
 export default UIButton;

@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import UIHeader from './components/UIHeader';
 import UISidebar from './components/UISidebar';
-import UIMenu from './components/UIMenu';
+//import UIMenu from './components/UIMenu';
+import UIMenu from './lib/UIMenu';
 import './App.scss';
 
 const menuItems = [

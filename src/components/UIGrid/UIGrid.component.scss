@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.uikit-grid {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 20px 0;
+
+  th {
+    border-bottom: 1px solid #D0D0D0;
+    position: relative;
+    text-align: left;
+    padding: 5px 0;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    .material-icons {
+      font-size: 12px;
+      color: #010101;
+      vertical-align: text-top;
+    }
+  }
+
+  tr {
+    border-bottom: 1px solid #D0D0D0;
+  }
+
+  td {
+    font-size: 12px;
+    line-height: 17px;
+    padding: 5px 0;
+    color: #323232;
+
+    a {
+      color: #b11118;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  th {
+    color: #8d8d8d;
+    font-size: 9px;
+    line-height: 13px;
+  }
+}

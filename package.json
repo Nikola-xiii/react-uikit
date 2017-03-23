@@ -18,6 +18,7 @@
     "babel-eslint": "7.1.1",
     "babel-jest": "18.0.0",
     "babel-loader": "6.2.10",
+    "babel-plugin-css-modules-transform": "^1.2.7",
     "babel-preset-es2015": "^6.24.0",
     "babel-preset-react-app": "^2.2.0",
     "babel-preset-stage-2": "^6.22.0",
@@ -67,7 +68,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "deploy": "gh-pages -d build",
-    "compile": "rimraf lib && babel src/components -d lib"
+    "lib-compile": "rimraf lib && babel src/components -d lib && copy src/components/*.scss lib"
   },
   "jest": {
     "collectCoverageFrom": [

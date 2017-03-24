@@ -69,7 +69,8 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "deploy": "gh-pages -d build",
-    "lib-compile": "rimraf lib && babel src/components -d lib"
+    "lib-compile": "rimraf lib && babel src/components -d lib",
+    "lib-css": "node-sass src/components/react-uikit.export.scss -o lib/"
   },
   "jest": {
     "collectCoverageFrom": [

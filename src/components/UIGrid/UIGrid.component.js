@@ -18,14 +18,14 @@ const GridRow = ({row, headers, index, columns}) => {
   if(row) {
     return(
       <tr key={index}>
-        {headers.map((header, i) => <GridCell index={i} value={row[header.key]} type={header.type}/>)}
+        {headers.map((header, i) => <GridCell index={i++} value={row[header.key]} type={header.type}/>)}
       </tr>
     )
   }
 
   if(columns) {
-    let rowElement = columns.id.map((id, index) => <tr>
-      {headers.map((header, i) => <GridCell value={columns[header.key][index]} type={header.type}/>)}
+    let rowElement = columns.id.map((id, index) => <tr key={index}>
+      {headers.map((header, i) => <GridCell index={i} value={columns[header.key][index]} type={header.type}/>)}
     </tr>);
 
     return (
